@@ -86,13 +86,13 @@ public class App
         Session session = sessionFactory.openSession();
         Transaction tx = session.beginTransaction();
 
-//        session.save(mars);
-//        session.save(falconOne);
-//        session.save(mimi);
-//        session.save(alienOne);
-//        session.save(alienTwo);
-//        session.save(unitedStates);
-//        session.save(japan);
+        session.save(mars);
+        session.save(falconOne);
+        session.save(mimi);
+        session.save(alienOne);
+        session.save(alienTwo);
+        session.save(unitedStates);
+        session.save(japan);
 
         // Fetch data
         telusko = (Alien) session.get(Alien.class,Long.valueOf(1));
